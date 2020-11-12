@@ -1,0 +1,21 @@
+// Import variables
+@import "./variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Global CSS
+@import "./global.sass";
+
+// Components
+@import "./components/navbar.scss";
+@import "./components/buttons.scss";
+
+// Sections
+@import "./sections/masthead.scss";
+@import "./sections/about.sass";
+@import "./sections/donate.sass";
+@import "./sections/projects.scss";
+@import "./sections/signup.sass";
+@import "./sections/contact.scss";
+@import "./sections/footer.scss";

@@ -1,0 +1,15 @@
+// Override Bootstrap color system
+
+$teal: #00C2CA;
+$black: #000000;
+$light-grey: #f8f9fa;
+
+// Override Bootstrap default state colors
+
+$primary: $teal;
+
+// Add colors to the color map
+
+$theme-colors: (
+    "black": $black,
+);
