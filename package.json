@@ -1,7 +1,7 @@
 {
     "title": "Car Therapy Web Series",
     "name": "cartherapyseries",
-    "version": "1.0",
+    "version": "6.0.3",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A website for the W",
+    "description": "A website for the Car Therapy Web Series",
     "keywords": [
         "css",
         "sass",
@@ -39,6 +39,7 @@
         "browser-sync": "2.26.13",
         "chokidar": "3.4.3",
         "concurrently": "5.3.0",
+        "parcel-bundler": "^1.12.4",
         "postcss": "8.1.4",
         "prettier": "2.1.2",
         "pug": "3.0.0",

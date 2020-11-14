@@ -1,10 +1,34 @@
 /*!
-    * Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+    * Start Bootstrap - Car Therapy Web Series v6.0.3 ()
+    * Copyright 2013-2020 Damita Salmon
+    * Licensed under MIT (https://github.com/StartBootstrap/cartherapyseries/blob/master/LICENSE)
     */
     (function ($) {
     "use strict"; // Start of use strict
+    // remove white around goFundMe
+        /*
+          1. Inject CSS which makes iframe invisible
+      */
+    
+     var div = document.createElement('div'),
+     ref = document.getElementsByTagName('base')[0] || 
+           document.getElementsByTagName('script')[0];
+
+    div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+
+    ref.parentNode.insertBefore(div, ref);
+
+        
+    /*
+        2. When window loads, remove that CSS, 
+            making iframe visible again
+    */
+    
+    window.onload = function() {
+        div.parentNode.removeChild(div);
+    }
+ 
+
 
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {

@@ -5,7 +5,7 @@
     min-height: 35rem;
     padding: 15rem 0;
     background: url("../assets/img/bg-masthead.png");
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -21,6 +21,10 @@
     h2 {
         max-width: 20rem;
         font-size: 1rem;
+    }
+    @include media-breakpoint-up(xs) {
+        padding: 0;
+
     }
     @include media-breakpoint-up(md) {
         h1 {

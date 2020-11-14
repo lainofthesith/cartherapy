@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Grayscale v6.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
+* Start Bootstrap - Car Therapy Web Series v6.0.3 ()
+* Copyright 2013-2020 Damita Salmon
+* Licensed under MIT (https://github.com/StartBootstrap/cartherapyseries/blob/master/LICENSE)
 */
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -10113,9 +10113,16 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html, body {
+  background: none #f8f9fa !important;
+}
+
+iframe {
+  background: none transparent !important;
+}
+
 body {
   letter-spacing: 0.0625em;
-  background-color: #f8f9fa;
   font-size: 1.1rem;
 }
 
@@ -10133,11 +10140,25 @@ h1, h2 {
 }
 
 .dark-bg {
-  background: #00aeb6;
+  background: #00b8c0;
   color: #fff;
 }
 .dark-bg h1, .dark-bg h2 {
   text-shadow: 1px 2px 3px #000000;
+}
+.dark-bg .btn {
+  background: #f8f9fa;
+  color: #00C2CA;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #mainNav {
@@ -10233,10 +10254,11 @@ h1, h2 {
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../assets/img/bg-masthead.png");
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  padding: 0;
 }
 .masthead h1 {
   font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10279,16 +10301,29 @@ h1, h2 {
 }
 .about-section p, .about-cast p, .about-creator p {
   margin-bottom: 1rem;
-  font-size: 1.05rem;
+  font-size: 105%;
 }
 
 .about-creator p {
-  font-size: 1.2rem;
+  font-size: 115%;
   line-height: 1.4;
 }
 
-.prod-still img {
-  max-width: 16rem;
+@media (max-width: 1199.98px) {
+  .about-section .prod-still img {
+    max-width: 16rem;
+  }
+}
+
+.about-cast .card {
+  background-color: transparent !important;
+  border: none;
+}
+.about-cast .card-img-top {
+  border-radius: 50%;
+}
+.about-cast .card-title {
+  font-weight: bold;
 }
 
 .donate-section {
@@ -10297,39 +10332,26 @@ h1, h2 {
 .donate-section p {
   margin-bottom: 2.5rem;
 }
-.donate-section #root:active {
-  background-color: transparent !important;
-}
 
 .cast-section .cast-bio {
   padding: 0.4rem;
 }
 
-.projects-section {
+.episodes-section {
+  display: none;
   padding: 10rem 0;
 }
-.projects-section .featured-text {
+.episodes-section .featured-text {
   padding: 2rem;
 }
 @media (min-width: 992px) {
-  .projects-section .featured-text {
+  .episodes-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #00C2CA;
   }
 }
-.projects-section .project-text {
-  padding: 3rem;
-  font-size: 90%;
-}
-@media (min-width: 992px) {
-  .projects-section .project-text {
-    padding: 5rem;
-  }
-  .projects-section .project-text hr {
-    border-color: #00C2CA;
-    border-width: 0.25rem;
-    width: 30%;
-  }
+.episodes-section .card-body {
+  background: transparent;
 }
 
 .signup-section {
@@ -10354,23 +10376,24 @@ h1, h2 {
   width: 100%;
 }
 
-.contact-section {
-  background: #00C2CA;
-}
 .contact-section .social {
   margin-top: 5rem;
+  /*  &:hover 
+  *      color: fade-out($light-grey, 0.9)
+  *  &:active 
+  *      color: $white */
 }
 .contact-section .social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 194, 202, 0.5);
   border-radius: 100%;
   line-height: 3rem;
-  color: #fff;
+  color: #009197;
 }
 .contact-section .social a:hover {
-  color: rgba(248, 249, 250, 0.1);
+  color: rgba(248, 249, 250, 0.8);
 }
 .contact-section .social a:active {
   color: #fff;
@@ -10378,5 +10401,5 @@ h1, h2 {
 
 .footer {
   padding: 3rem 0;
-  background: #00C2CA;
+  font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }

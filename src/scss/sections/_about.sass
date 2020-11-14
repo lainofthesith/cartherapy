@@ -2,13 +2,22 @@
     padding: 8rem 0
     p 
         margin-bottom: 1rem
-        font-size: 1.05rem
-.about-section
+        font-size: 105%
 
 .about-creator p
-    font-size: 1.2rem
+    font-size: 115%
     line-height: 1.4
 
-.prod-still
-    img
-        max-width: 16rem
+.about-section  
+    @include media-breakpoint-down(lg) 
+         .prod-still
+            img
+                max-width: 16rem
+.about-cast
+    .card
+        background-color: transparent !important
+        border: none
+    .card-img-top
+        border-radius: 50%
+    .card-title
+        font-weight: bold

@@ -1,8 +1,12 @@
-// Global styling for this template
+// Global styling
+html, body 
+    background: none $light-grey !important
+
+iframe
+    background: none transparent !important
 
 body 
     letter-spacing: $base-letter-spacing
-    background-color: $light-grey
     font-size: 1.1rem
 
 h1, h2
@@ -15,7 +19,19 @@ h1, h2
         color: $primary
         text-shadow: 1px 2px 1px $black    
 .dark-bg
-    background: darken($primary, 4%)
+    background: darken($primary, 2%)
     color: $white
     h1,h2
-        text-shadow: 1px 2px 3px $black    
+        text-shadow: 1px 2px 3px $black
+    .btn
+        background: $light-grey
+        color: $primary
+
+.no-gutters 
+  margin-right: 0
+  margin-left: 0
+
+  > .col,
+  > [class*="col-"] 
+    padding-right: 0
+    padding-left: 0
