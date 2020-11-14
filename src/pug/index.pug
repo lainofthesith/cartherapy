@@ -1,4 +1,3 @@
-doctype html
 html(lang='en')
 
     head
@@ -16,6 +15,7 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
 
         // Google fonts
+        link(rel="preconnect" href="https://fonts.gstatic.com")
         link(href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet")
 
         // Core theme CSS (includes Bootstrap)
@@ -23,8 +23,11 @@ html(lang='en')
 
     body#page-top
 
-        // Navigation
+        // Masthead
         header.masthead
+
+            // Navigation
+
             nav#mainNav.navbar.navbar-expand-lg.navbar-dark
                 .container-fluid
                     a.navbar-brand.js-scroll-trigger(href='#page-top') Car Therapy
@@ -36,181 +39,194 @@ html(lang='en')
                             li.nav-item
                                 a.nav-link.js-scroll-trigger(href='#about') About
                             li.nav-item
-                                a.nav-link.js-scroll-trigger(href='#cast') Cast
-                            li.nav-item
                                 a.nav-link.js-scroll-trigger(href='#donate') Donate
                             li.nav-item
                                 a.nav-link.js-scroll-trigger(href='#episodes') Watch
                             li.nav-item
                                 a.nav-link.js-scroll-trigger(href='#signup') Connect
-        // Masthead
-            .container.d-flex.h-100.align-items-center
+        
 
-        // About
+        // About Series
         section#about.about-section.text-center.dark-bg
             .container
-                .row
+                h2.mb-5.text-center About the Series
+                .mt-5
                     .col-lg-8.mx-auto
-                        h2.text-white.mb-4 About the Series
-                .row
-                    .col-lg-8.mx-auto
-                        p.text-white 
+                        p 
                             | Have you ever seen the meme “Parked car conversations are low-key therapy sessions?” 
                             | Well this is one of the things that inspired this series. I’ve had some of my best and worst conversations in a car, 
                             | and in talking to people, that seems to be a common thing.
-                        p.text-white 
+                        p 
                             | Car Therapy is a 6 episode web series about A down-on-her-luck college therapist who decides to drive for a ride sharing app to make ends meet during a pandemic. 
                             | On her rides, she is exposed to new people and new parts of LA and always ends up dishing advice, whether solicited or not.
-                        p.text-white
+                        p.pb-5
                             | Not only do we need more black stories on screen, we need to have these conversations surrounding mental health. 
                             | It is slowly breaking out of the taboo category in the black community- and I want to use my series to shed more light on it, in a comedic way. 
                             | This isn’t intended to throw textbook diagnosis around, but to have real conversations about how each character vents, reacts, or explores a different side of the human experience.
-                .row.pb-12
-                    .col-lg-2.mx-auto
-                        img.img-fluid(src='assets/img/pd_still_1.png', alt='')
-                    .col-lg-2.mx-auto
-                        img.img-fluid(src='assets/img/pd_still_2.png', alt='')
-                    .col-lg-2.mx-auto
-                        img.img-fluid(src='assets/img/pd_still_3.png', alt='')
-                    .col-lg-2.mx-auto
-                        img.img-fluid(src='assets/img/pd_still_4.png', alt='')
-                    .col-lg-2.mx-auto
-                        img.img-fluid(src='assets/img/pd_still_5.png', alt='')
-        section.text-center.light-bg
+            
+            .row.container-fluid
+                .prod-still.mx-auto.p-2.col
+                    img.img-fluid(src='assets/img/pd_still_4.png', alt='')
+                .prod-still.mx-auto.p-2.col
+                    img.img-fluid(src='assets/img/pd_still_2.png', alt='')
+                .prod-still.mx-auto.p-2.col
+                    img.img-fluid(src='assets/img/pd_still_3.png', alt='')
+                .prod-still.mx-auto.p-2.col
+                    img.img-fluid(src='assets/img/pd_still_1.png', alt='')
+                .prod-still.mx-auto.p-2.col
+                    img.img-fluid(src='assets/img/pd_still_5.png', alt='')
+        
+        section.text-center.light-bg.about-cast
             .container
-                .row
-                    .col-lg-8.mx-auto
-                        h2.text-white.mb-4 Cast
-                .d-flex.flex-row.bd-highlight.mb-3
-                    .col-lg-3.mx-auto
-                        .card(style='width: 18rem;')
+                h2.mb-5 Cast
+                .cast-section.d-flex.flex-wrap.mx-auto.justify-content-around.align-content-around
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
                             img.card-img-top(src='...' alt='Card image cap')
                             .card-body
-                                h5.card-title Card title
+                                h5.card-title Christian Krauspe <br/> as "Brian"
                                 p.card-text
                                 | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-                                a.btn.btn-primary(href='#') Go somewhere
-                    .col-lg-3.mx-auto
-                        .card(style='width: 18rem;')
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
                             img.card-img-top(src='...' alt='Card image cap')
                             .card-body
-                                h5.card-title Card title
+                                h5.card-title Karisa Tate <br/> as "Amy"
                                 p.card-text
                                 | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-                                a.btn.btn-primary(href='#') Go somewhere
-                    .col-lg-3.mx-auto
-                        .card(style='width: 18rem;')
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
                             img.card-img-top(src='...' alt='Card image cap')
                             .card-body
-                                h5.card-title Card title
+                                h5.card-title Cecelia Friday <br/> as "Chrissy"
                                 p.card-text
                                 | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-                                a.btn.btn-primary(href='#') Go somewhere
-                    .col-lg-3.mx-auto
-                        .card(style='width: 18rem;')
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
                             img.card-img-top(src='...' alt='Card image cap')
                             .card-body
-                                h5.card-title Card title
+                                h5.card-title Bileko Wissa <br/> as "Christoph"
                                 p.card-text
                                 | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-                                a.btn.btn-primary(href='#') Go somewhere
-    
-    section.dark-bg
-        .container
-            .row
-                .col-lg-8.mx-auto
-                    h2.text-white.mb-4 About the Creator
-            .row.pb-12
-                .col-lg-6.mx-auto
-                    img.img-fluid(src='assets/img/creator.jpg', alt='')
-                .col-lg-6.mx-auto
-                    h3.text-white.mb-4 Jennelle Williams is a storyteller at heart, who became a multi-hyphenate (writer/director/producer, and sometimes actor!) to get her stories told. She took the leap to LA after studying film in her hometown of DC, driving across the country for her dreams. Since moving to sunny California, she has worked on several sets, starting out as a PA and working her way up to staff writer on two sitcoms. She plans on taking her own projects to the big screens; writing and developing half-hour shows and feature length films focusing on multi-generational familial, platonic, and romantic relationships from a black woman's point of view. 
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Mina Q <br/> as "T"
+                                p.card-text
+                                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Jasmyn Carter <br/> as "La'Daria"
+                                p.card-text
+                                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Tony Baker <br/> as "Hoodie"
+                                p.card-text
+                                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Jonnae Thompson <br/> as "Breanna"
+                                p.card-text
+                                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                    .cast-bio
+                        .card(style='width: 18rem;').dark-bg.mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Ash Saunders <br/> as "Nikki"
+                                p.card-text
+                                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                  
+        section.dark-bg.about-creator.text-center
+            .container
+                .col-sm-12.mb-5
+                    h2.text-white.mb-5 About the Creator
+                .row.row-cols-md-2.row-cols-xs-1.mt-5
+                    .col.mx-auto
+                        img.img-fluid(src='assets/img/creator.jpg', alt='series-creator')
+                    .col.pl-5.align-self-center
+                        p Jennelle Williams is a storyteller at heart, who became a multi-hyphenate (writer/director/producer, and sometimes actor!) to get her stories told. She took the leap to LA after studying film in her hometown of DC, driving across the country for her dreams. Since moving to sunny California, she has worked on several sets, starting out as a PA and working her way up to staff writer on two sitcoms. She plans on taking her own projects to the big screens; writing and developing half-hour shows and feature length films focusing on multi-generational familial, platonic, and romantic relationships from a black woman's point of view. 
 
         // Donate
-        section#donate.donate-section.text-center
+        section#donate.donate-section.text-center.light-bg
             .container
                 .row
                     .col-lg-8.mx-auto
-                        h2.text-white.mb-4 Donate
-                        p.text-white-50
-                            | Become a rider today!
-                        .social.d-flex.justify-content-center
-                            a.mx-2(href='https://www.instagram.com/cartherapyseries/')
-                                i.far.fa-money-bill-wave
-                            a.mx-2(href='https://startbootstrap.com/theme/grayscale/') GoFundMe
-                                i.far.fa-money-bill-wave
-                            a.mx-2(href='https://startbootstrap.com/theme/grayscale/') CashApp
-                                i.far.fa-money-bill-wave
-                            a.mx-2(href='https://startbootstrap.com/theme/grayscale/') CashApp
-                                i.far.fa-money-bill-wave
-
+                        h2.mb-4 Donate
+                        h4.mb3 Become a rider today!
+                        .my-5.embed-responsive
+                            iframe(width="560" height="315" src="https://www.youtube.com/embed/6OFleiE81-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                        .gfm-embed(data-url='https://www.gofundme.com/f/car-therapy-web-series/widget/medium/')
+                            script(defer='' src='https://www.gofundme.com/static/js/embed.js')
+         
 
         // Episodes
-        section#epidodes.projects-section.bg-light
+        section#epidodes.projects-section.dark-bg
             .container
-                // Featured Project Row
-                .row.align-items-center.no-gutters.mb-4.mb-lg-5
-                    .col-lg-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='')
-                    .col-lg-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
-                            p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
-                // Project One Row
-                .row.justify-content-center.no-gutters.mb-5.mb-lg-0
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='')
-                    .col-lg-6
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
-                                    hr.d-none.d-lg-block.mb-0.ml-0
-                // Project Two Row
-                .row.justify-content-center.no-gutters
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='')
-                    .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
-                                        | Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!
-                                    hr.d-none.d-lg-block.mb-0.mr-0
+                h2.text-center Latest Episodes
+                .my-5
+                    iframe(width="560" height="315" src="https://www.youtube.com/embed/6OFleiE81-E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                .more-episodes 
+                    .episode
+                        .card(style='width: 18rem;').mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Episode 4
 
+                    .episode
+                        .card(style='width: 18rem;').mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Episode 3
+
+                    .episode
+                        .card(style='width: 18rem;').mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Episode 2
+
+                    .episode
+                        .card(style='width: 18rem;').mx-auto
+                            img.card-img-top(src='...' alt='Card image cap')
+                            .card-body
+                                h5.card-title Episode 1
+                             
         // Connect
-        section#signup.signup-section.bg-light
+        section#signup.signup-section.light-bg
             .container
                 .row
                     .col-md-10.col-lg-8.mx-auto.text-center
-                        i.far.fa-paper-plane.fa-2x.mb-2.text-white
-                        h2.text-white.mb-5 Connect
+                        i.far.fa-paper-plane.fa-2x.mb-2
+                        h2.mb-5 Connect
                         form(action="https://formspree.io/f/mjvpokav" method="post")
                             .form-group
                                 .row
                                     .col-md-6.mb-3
-                                        label(for="name") Name
+                                        label(for="name") Name:
                                         input(name="name" id="name" type="text" aria-describedby="emailHelp" placeholder="Your Name" required).form-control
                                         .invalid-feedback Your name is required.
 
                                     .col-md-6.mb-3
-                                        label(for="username") IG Handle
+                                        label(for="username") IG handle:
                                         .input-group
                                             .input-group-prepend
                                                 .span.input-group-text @
                                             input(name="username" id="username" type="text" placeholder="IG Handle").form-control
                                 .row
                                     .col-md-12.mb-3
-                                        label(for="email") Email
+                                        label(for="email") Email:
                                         input(name="Email" id="email" type="email" placeholder="you@example.com").form-control
                                 .row
                                     .col-md-12.mb-3
                                         label(for="message") Your message:
-                                        textarea(name="message" required).form-control
+                                        textarea(name="message" placeholder="Write something nice..." required).form-control
                                         .invalid-feedback A message is required.
 
                                 button(type="submit").btn.btn-primary Submit

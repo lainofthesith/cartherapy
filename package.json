@@ -1,7 +1,7 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
-    "version": "6.0.3",
+    "title": "Car Therapy Web Series",
+    "name": "cartherapyseries",
+    "version": "1.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -12,28 +12,24 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "description": "A website for the W",
     "keywords": [
         "css",
         "sass",
         "html",
         "responsive",
-        "theme",
-        "template"
+        "bootstrap"
     ],
-    "homepage": "https://startbootstrap.com/theme/grayscale",
+    "homepage": "",
     "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/lainofthesith/cartherapy/issues",
+        "email": "lainofthesith@gmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
+    "author": "Damita Salmon",
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-grayscale.git"
+        "url": "https://github.com/lainofthesith/cartherapy.git"
     },
     "dependencies": {
         "bootstrap": "4.5.3"

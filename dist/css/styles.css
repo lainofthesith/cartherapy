@@ -61,7 +61,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5678,7 +5678,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5780,7 +5780,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -10115,6 +10115,8 @@ h3 {
 }
 body {
   letter-spacing: 0.0625em;
+  background-color: #f8f9fa;
+  font-size: 1.1rem;
 }
 
 h1, h2 {
@@ -10122,24 +10124,33 @@ h1, h2 {
 }
 
 .light-bg {
+  background: #f8f9fa;
+  color: #009197;
+}
+.light-bg h1, .light-bg h2 {
   color: #00C2CA;
-  text-shadow: 1px 2px 3px #000000;
+  text-shadow: 1px 2px 1px #000000;
 }
 
 .dark-bg {
-  background: #00C2CA;
+  background: #00aeb6;
   color: #fff;
+}
+.dark-bg h1, .dark-bg h2 {
+  text-shadow: 1px 2px 3px #000000;
 }
 
 #mainNav {
   min-height: 3.5rem;
   background-color: transparent;
+  font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-shadow: 1px 2px 2px #000000;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #00C2CA;
-  border: 1px solid #00C2CA;
+  color: #fff;
+  border: 1px solid #fff;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -10169,18 +10180,17 @@ h1, h2 {
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
-    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.85);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #fff;
   }
   #mainNav .nav-link:active {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
   }
   #mainNav.navbar-shrink {
     background-color: #00C2CA;
@@ -10223,7 +10233,7 @@ h1, h2 {
   min-height: 35rem;
   padding: 15rem 0;
   background: url("../assets/img/bg-masthead.png");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -10264,19 +10274,35 @@ h1, h2 {
   }
 }
 
-.about-section {
-  padding: 7rem auto;
+.about-section, .about-cast, .about-creator {
+  padding: 8rem 0;
 }
-.about-section p {
-  margin-bottom: 5rem;
+.about-section p, .about-cast p, .about-creator p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.about-creator p {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.prod-still img {
+  max-width: 16rem;
 }
 
 .donate-section {
-  padding-top: 10rem;
-  background: #fff;
+  padding: 7rem 0;
 }
 .donate-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+}
+.donate-section #root:active {
+  background-color: transparent !important;
+}
+
+.cast-section .cast-bio {
+  padding: 0.4rem;
 }
 
 .projects-section {
@@ -10308,21 +10334,13 @@ h1, h2 {
 
 .signup-section {
   padding: 5rem 0;
-  background: linear-gradient(to bottom, #fade-out #00C2CA, 0.5 75%, #fade-out #00C2CA, 0.9 0%, #00C2CA 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
+  font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.signup-section h2 {
-  color: #00C2CA;
-  text-shadow: 1px 2px 3px #000000;
-}
-.signup-section form input {
+.signup-section form input, .signup-section form textarea {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
   height: auto;
-  font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 80%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
@@ -10332,13 +10350,12 @@ h1, h2 {
   font-size: 95%;
   font-weight: 900;
 }
-.signup-section .invalid-feedback {
+.signup-section form .invalid-feedback {
   width: 100%;
 }
 
 .contact-section {
   background: #00C2CA;
-  padding-top: 5rem;
 }
 .contact-section .social {
   margin-top: 5rem;
@@ -10347,19 +10364,19 @@ h1, h2 {
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 100%;
   line-height: 3rem;
   color: #fff;
 }
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(248, 249, 250, 0.1);
 }
 .contact-section .social a:active {
   color: #fff;
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #00C2CA;
 }

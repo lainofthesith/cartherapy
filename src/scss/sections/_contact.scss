@@ -1,18 +1,17 @@
 .contact-section {
     background: $primary;
-    padding-top: 5rem;
     .social {
         margin-top: 5rem;
         a {
             text-align: center;
             height: 3rem;
             width: 3rem;
-            background: fade-out($white, 0.9);
+            background: fade-out($white, 0.5);
             border-radius: 100%;
             line-height: 3rem;
             color: $white;
             &:hover {
-                color: fade-out($white, 0.5);
+                color: fade-out($light-grey, 0.9);
             }
             &:active {
                 color: $white;

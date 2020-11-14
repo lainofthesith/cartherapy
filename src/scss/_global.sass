@@ -2,14 +2,20 @@
 
 body 
     letter-spacing: $base-letter-spacing
+    background-color: $light-grey
+    font-size: 1.1rem
 
 h1, h2
     font-family: $font-family-special
 
 .light-bg
-    color: $primary
-    text-shadow: 1px 2px 3px $black
-    
+    background: $light-grey
+    color: darken($primary, 10%)
+    h1,h2
+        color: $primary
+        text-shadow: 1px 2px 1px $black    
 .dark-bg
-    background: $primary
+    background: darken($primary, 4%)
     color: $white
+    h1,h2
+        text-shadow: 1px 2px 3px $black    
