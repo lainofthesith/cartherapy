@@ -1,4 +1,4 @@
-#mainNav , .dropdown, .drowpdown button {
+#mainNav {
     min-height: 3.5rem;
     background-color: transparent;
     font-family: $font-family-special;
@@ -18,8 +18,12 @@
         padding: 0.9rem 0;
         font-family: $font-family-special;
     }
+    .navbar-nav li:hover>.dropdown-menu {
+        display: block;
+        text-shadow: none;
+      }
     .navbar-nav {
-        .nav-item, .dropdown, .drowpdown button {
+        .nav-item {
             &:hover {
                 color: $white;
                 outline: none;
@@ -52,12 +56,13 @@
                 color: fade-out($white, 0.5);
             }
         }
+
         &.navbar-shrink {
             background-color: $teal;
             .navbar-brand {
                 color: $black;
             }
-            .nav-link {
+            .nav-link{
                 color: $black;
                 padding: 1.5rem 1.5rem 1.25rem;
                 border-bottom: 0.25rem solid transparent;

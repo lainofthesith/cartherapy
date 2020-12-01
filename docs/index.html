@@ -28,17 +28,12 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <div class="dropdown">
-                                    <button id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        About
-                                        <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#about-series">About the Series</a>
-                                        <a class="dropdown-item" href="#about-creator">Meet the Creator</a>
-                                        <a class="dropdown-item" href="#about-cast">About the Cast</a>
-                                    </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#about" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#about-series">About the Series</a>
+                                    <a class="dropdown-item" href="#about-creator">Meet the Creator</a>
+                                    <a class="dropdown-item" href="#about-cast">About the Cast</a>
                                 </div>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="#episodes">Watch</a></li>
@@ -63,12 +58,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row container-fluid mx-auto">
-                <div class="prod-still mx-auto p-2 col"><img class="img-fluid" src="assets/img/pd_still_4.jpg" alt="production still 4" /></div>
-                <div class="prod-still mx-auto p-2 col"><img class="img-fluid" src="assets/img/pd_still_2.jpg" alt="production still 2" /></div>
-                <div class="prod-still mx-auto p-2 col"><img class="img-fluid" src="assets/img/pd_still_3.jpg" alt="production still 3" /></div>
-                <div class="prod-still mx-auto p-2 col"><img class="img-fluid" src="assets/img/pd_still_1.jpg" alt="production still 1" /></div>
-                <div class="prod-still mx-auto p-2 col"><img class="img-fluid" src="assets/img/pd_still_5.jpg" alt="production still 5" /></div>
+            <div class="row container-fluid mx-auto pt-5">
+                <div class="prod-still mx-auto p-2"><img class="img-fluid" src="assets/img/pd_still_4.jpg" alt="production still 4" /></div>
+                <div class="prod-still mx-auto p-2"><img class="img-fluid" src="assets/img/pd_still_2.jpg" alt="production still 2" /></div>
+                <div class="prod-still mx-auto p-2"><img class="img-fluid" src="assets/img/pd_still_3.jpg" alt="production still 3" /></div>
+                <div class="prod-still mx-auto p-2"><img class="img-fluid" src="assets/img/pd_still_1.jpg" alt="production still 1" /></div>
+                <div class="prod-still mx-auto p-2"><img class="img-fluid" src="assets/img/pd_still_5.jpg" alt="production still 5" /></div>
             </div>
         </section>
         <section class="light-bg about-creator text-center">
@@ -220,11 +215,11 @@
                         <div class="col-lg-5 col-md-8 no-gutters mx-auto gfm-embed" data-url="https://www.gofundme.com/f/car-therapy-web-series/widget/medium/"></div>
                         <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
                     </div>
-                    <div class="row mt-5">
-                        <a class="mx-2" href="https://cash.app/$thatgirlcreates" target="_blank"><img src="assets/img/cashapp.png" alt="CashApp" style="width: 40%" /></a>
+                    <div class="mt-5 text-center">
+                        <a class="mx-auto" href="https://cash.app/$thatgirlcreates" target="_blank"><img src="assets/img/cashapp.png" alt="CashApp" style="max-width: 35%" /></a>
                     </div>
-                    <div class="row mt-5">
-                        <a class="mx-2" href="https://venmo.com/thatgirlcreates" target="_blank"><img src="assets/img/venmo.png" alt="Venmo" style="width: 40%" /></a>
+                    <div class="mt-5 text-center">
+                        <a class="mx-auto" href="https://venmo.com/thatgirlcreates" target="_blank"><img src="assets/img/venmo.png" alt="Venmo" style="max-width: 35%" /></a>
                     </div>
                 </div>
             </div>
@@ -324,5 +319,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </body>
 </html>

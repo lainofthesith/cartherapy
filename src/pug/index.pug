@@ -36,14 +36,12 @@ html(lang='en')
                         i.fas.fa-bars
                     #navbarResponsive.collapse.navbar-collapse
                         ul.navbar-nav.ml-auto
-                            li.nav-item
-                                .dropdown
-                                    button(id="dropdownMenuButton", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") About
-                                        i.fa.fa-caret-down
-                                    .dropdown-menu(aria-labelledby="dropdownMenuButton") 
-                                        a.dropdown-item(href="#about-series") About the Series
-                                        a.dropdown-item(href="#about-creator") Meet the Creator
-                                        a.dropdown-item(href="#about-cast") About the Cast
+                            li.nav-item.dropdown
+                                a.nav-link.dropdown-toggle(href="#about", id="navbarDropdownMenuLink", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") About
+                                .dropdown-menu(aria-labelledby="dropdownMenuButton") 
+                                    a.dropdown-item(href="#about-series") About the Series
+                                    a.dropdown-item(href="#about-creator") Meet the Creator
+                                    a.dropdown-item(href="#about-cast") About the Cast
                             li.nav-item
                                 a.nav-link(href='#episodes') Watch
                             li.nav-item
@@ -60,16 +58,16 @@ html(lang='en')
                     .col-lg-8.mx-auto
                         p Car convos are some of the best therapy sessions money can't buy. <br />Car Therapy is a digital comedy series about a down-on-her-luck college therapist who decides to drive for a ride sharing app to make ends meet during a pandemic. On her rides, she is exposed to new people and new parts of LA and always ends up dishing advice, whether solicited or not.
             
-            .row.container-fluid.mx-auto
-                .prod-still.mx-auto.p-2.col
+            .row.container-fluid.mx-auto.pt-5.d-flex.justify-content-around.align-content-around
+                .prod-still.mx-auto.p-2
                     img.img-fluid(src='assets/img/pd_still_4.jpg', alt='production still 4')
-                .prod-still.mx-auto.p-2.col
+                .prod-still.mx-auto.p-2
                     img.img-fluid(src='assets/img/pd_still_2.jpg', alt='production still 2')
-                .prod-still.mx-auto.p-2.col
+                .prod-still.mx-auto.p-2
                     img.img-fluid(src='assets/img/pd_still_3.jpg', alt='production still 3')
-                .prod-still.mx-auto.p-2.col
+                .prod-still.mx-auto.p-2
                     img.img-fluid(src='assets/img/pd_still_1.jpg', alt='production still 1')
-                .prod-still.mx-auto.p-2.col
+                .prod-still.mx-auto.p-2
                     img.img-fluid(src='assets/img/pd_still_5.jpg', alt='production still 5')
         
         section.light-bg.about-creator.text-center
@@ -154,11 +152,11 @@ html(lang='en')
                     .goFundMe.mx-auto.row
                         div.col-lg-5.col-md-8.no-gutters.mx-auto(class="gfm-embed" data-url="https://www.gofundme.com/f/car-therapy-web-series/widget/medium/")
                         script(defer src="https://www.gofundme.com/static/js/embed.js")
-                    .row.mt-5.text-center
-                        a.mx-2(href='https://cash.app/$thatgirlcreates' target="_blank")
+                    .mt-5.text-center
+                        a.mx-auto(href='https://cash.app/$thatgirlcreates' target="_blank")
                             img(src="assets/img/cashapp.png", alt="CashApp", style="max-width:35%")
-                    .row.mt-5.text-center
-                        a.mx-2(href='https://venmo.com/thatgirlcreates' target="_blank")
+                    .mt-5.text-center
+                        a.mx-auto(href='https://venmo.com/thatgirlcreates' target="_blank")
                             img(src="assets/img/venmo.png", alt="Venmo", style="max-width:35%")
         // Episodes
         section#epidodes.episodes-section.dark-bg
@@ -246,3 +244,6 @@ html(lang='en')
 
         // Third party plugin JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+       
+        // Core theme JS
+        script(src='js/scripts.js')
