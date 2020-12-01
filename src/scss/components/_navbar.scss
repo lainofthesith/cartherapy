@@ -1,4 +1,4 @@
-#mainNav {
+#mainNav , .dropdown, .drowpdown button {
     min-height: 3.5rem;
     background-color: transparent;
     font-family: $font-family-special;
@@ -19,7 +19,7 @@
         font-family: $font-family-special;
     }
     .navbar-nav {
-        .nav-item {
+        .nav-item, .dropdown, .drowpdown button {
             &:hover {
                 color: $white;
                 outline: none;

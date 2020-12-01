@@ -10161,76 +10161,76 @@ h1, h2 {
   padding-left: 0;
 }
 
-#mainNav {
+#mainNav, .dropdown, .drowpdown button {
   min-height: 3.5rem;
   background-color: transparent;
   font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-shadow: 1px 2px 2px #000000;
 }
-#mainNav .navbar-toggler {
+#mainNav .navbar-toggler, .dropdown .navbar-toggler, .drowpdown button .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
   color: #fff;
   border: 1px solid #fff;
 }
-#mainNav .navbar-toggler:focus {
+#mainNav .navbar-toggler:focus, .dropdown .navbar-toggler:focus, .drowpdown button .navbar-toggler:focus {
   outline: none;
 }
-#mainNav .navbar-brand {
+#mainNav .navbar-brand, .dropdown .navbar-brand, .drowpdown button .navbar-brand {
   color: #fff;
   font-weight: 700;
   padding: 0.9rem 0;
   font-family: "Special Elite", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#mainNav .navbar-nav .nav-item:hover {
+#mainNav .navbar-nav .nav-item:hover, #mainNav .navbar-nav .dropdown:hover, #mainNav .navbar-nav .drowpdown button:hover, .dropdown .navbar-nav .nav-item:hover, .dropdown .navbar-nav .dropdown:hover, .dropdown .navbar-nav .drowpdown button:hover, .drowpdown button .navbar-nav .nav-item:hover, .drowpdown button .navbar-nav .dropdown:hover, .drowpdown button .navbar-nav .drowpdown button:hover {
   color: #fff;
   outline: none;
   background-color: transparent;
 }
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus, #mainNav .navbar-nav .dropdown:active, #mainNav .navbar-nav .dropdown:focus, #mainNav .navbar-nav .drowpdown button:active, #mainNav .navbar-nav .drowpdown button:focus, .dropdown .navbar-nav .nav-item:active, .dropdown .navbar-nav .nav-item:focus, .dropdown .navbar-nav .dropdown:active, .dropdown .navbar-nav .dropdown:focus, .dropdown .navbar-nav .drowpdown button:active, .dropdown .navbar-nav .drowpdown button:focus, .drowpdown button .navbar-nav .nav-item:active, .drowpdown button .navbar-nav .nav-item:focus, .drowpdown button .navbar-nav .dropdown:active, .drowpdown button .navbar-nav .dropdown:focus, .drowpdown button .navbar-nav .drowpdown button:active, .drowpdown button .navbar-nav .drowpdown button:focus {
   outline: none;
   background-color: transparent;
 }
 @media (min-width: 992px) {
-  #mainNav {
+  #mainNav, .dropdown, .drowpdown button {
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
   }
-  #mainNav .navbar-brand {
+  #mainNav .navbar-brand, .dropdown .navbar-brand, .drowpdown button .navbar-brand {
     padding: 0.5rem 0;
   }
-  #mainNav .nav-link {
+  #mainNav .nav-link, .dropdown .nav-link, .drowpdown button .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
     color: rgba(255, 255, 255, 0.85);
   }
-  #mainNav .nav-link:hover {
+  #mainNav .nav-link:hover, .dropdown .nav-link:hover, .drowpdown button .nav-link:hover {
     color: #fff;
   }
-  #mainNav .nav-link:active {
+  #mainNav .nav-link:active, .dropdown .nav-link:active, .drowpdown button .nav-link:active {
     color: rgba(255, 255, 255, 0.5);
   }
-  #mainNav.navbar-shrink {
+  #mainNav.navbar-shrink, .dropdown.navbar-shrink, .drowpdown button.navbar-shrink {
     background-color: #00C2CA;
   }
-  #mainNav.navbar-shrink .navbar-brand {
+  #mainNav.navbar-shrink .navbar-brand, .dropdown.navbar-shrink .navbar-brand, .drowpdown button.navbar-shrink .navbar-brand {
     color: #000000;
   }
-  #mainNav.navbar-shrink .nav-link {
+  #mainNav.navbar-shrink .nav-link, .dropdown.navbar-shrink .nav-link, .drowpdown button.navbar-shrink .nav-link {
     color: #000000;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
-  #mainNav.navbar-shrink .nav-link:hover {
+  #mainNav.navbar-shrink .nav-link:hover, .dropdown.navbar-shrink .nav-link:hover, .drowpdown button.navbar-shrink .nav-link:hover {
     color: #00C2CA;
   }
-  #mainNav.navbar-shrink .nav-link:active {
+  #mainNav.navbar-shrink .nav-link:active, .dropdown.navbar-shrink .nav-link:active, .drowpdown button.navbar-shrink .nav-link:active {
     color: #00797e;
   }
-  #mainNav.navbar-shrink .nav-link.active {
+  #mainNav.navbar-shrink .nav-link.active, .dropdown.navbar-shrink .nav-link.active, .drowpdown button.navbar-shrink .nav-link.active {
     color: #00C2CA;
     outline: none;
     border-bottom: 0.25rem solid #00C2CA;
@@ -10335,6 +10335,14 @@ h1, h2 {
 
 .cast-section .cast-bio {
   padding: 0.4rem;
+}
+.cast-section .cast-bio img.card-img-top {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
 }
 
 .episodes-section {
