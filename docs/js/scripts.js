@@ -1,6 +1,6 @@
 /*!
     * Start Bootstrap - Car Therapy Web Series v6.0.3 ()
-    * Copyright 2013-2020 Damita Salmon
+    * Copyright 2013-2021 Damita Salmon
     * Licensed under MIT (https://github.com/StartBootstrap/cartherapyseries/blob/master/LICENSE)
     */
     (function ($) {
