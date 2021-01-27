@@ -36,6 +36,11 @@
             }
         }
     }
+    #logo {
+        max-width: 200px;
+        box-shadow: 2px 3px 10px #000;
+        opacity: .95;
+    }
     @include media-breakpoint-up(lg) {
         padding-top: 0;
         padding-bottom: 0;
